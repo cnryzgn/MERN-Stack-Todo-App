@@ -8,7 +8,7 @@
   * [Setup](https://github.com/cnryzgn/MERN-Stack-Todo-App#Setup)<br>
   
 ## Screenshot
-  ![](https://github.com/cnryzgn/MERN-Stack-Todo-App/tree/main/screenshot/screenshot.png)
+  ![](https://github.com/cnryzgn/MERN-Stack-Todo-App/tree/main/screenshot)
   
 ## Technologies
 ### Front End
