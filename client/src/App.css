@@ -1,0 +1,260 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+/************************ TO-DO FORM ************************/
+
+.form-container {
+    width: 55%;
+    height: 32vh;
+    margin: 30px auto;
+    background-color: #008080;
+    box-shadow: 0 0 5px #999;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-container h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3rem;
+    color: #fff;
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+}
+
+.input-group input {
+    width: 330px;
+    height: 38px;
+    padding: 12px;
+    font-size: .9rem;
+    border: 1px solid #777;
+    border-radius: 4px;
+    outline: none;
+}
+
+.input-group button {
+    width: 50px;
+    height: 38px;
+    text-align: center;
+    color: #eee;
+    background-color: #deb887;
+    border: 1px solid #deb887;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.input-group button:hover {
+    transition: .5s;
+    background-color: #eeb973;
+}
+
+/************************ TO-DO LIST ************************/
+
+.todo-container {
+    width: 55%;
+    min-height: 32vh;
+    margin: 30px auto;
+}
+
+.todo-container li {
+    width: 100%;
+    min-height: 40px;
+    list-style: none;
+    padding: 12px 20px;
+    margin-bottom: 17px;
+    display: flex;
+    align-items: center;
+    background-color: #008080;
+    box-shadow: 0 0 5px #999;
+    border-radius: 5px;
+}
+
+.todo-container li p {
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.button-group {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-group #deleteBtn,
+.button-group #editBtn {
+    width: 75px;
+    height: 40px;
+    cursor: pointer;
+    transition: .6s;
+}
+
+#deleteBtn {
+    margin-right: 6px;
+    color: #fff;
+    background-color: #dc143c;
+    border: 1px solid #dc143c;
+    border-radius: 5px;
+}
+
+#deleteBtn:hover {
+    background-color: #e64e6d;
+}
+
+#editBtn {
+    background-color: #ffff00;
+    border: 1px solid #ffff00;
+    border-radius: 5px;
+}
+
+#editBtn:hover {
+    background-color: #e6e645e3;
+}   
+
+/************************ Edit Modal ************************/
+.modal-container {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    width: 45%;
+    min-height: 30vh;
+    background-color: #f3f3f3;
+    border: 1px solid #f3f3f3;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.modal h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 2.5rem;
+    color: #008080;
+    margin-block: 20px;
+}
+
+.modal .input-group:first-child input {
+    text-align: center;
+    background-color: #008080;
+    border: 1px solid #008080; 
+    font-weight: bold;
+}
+
+.modal .input-group {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.modal button {
+    width: 100%;
+    height: 42px;
+    margin-bottom: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: .9rem;
+    font-weight: bold;
+    background-color: #ffff00;
+    border: 1px solid #ffff00;
+    box-shadow: 0 0 3px #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    box-shadow: 0 0 6px #999;
+}
+
+.closeBtn {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    cursor: pointer;
+}
+
+.closeBtn:hover {
+    color: #777;
+}
+
+
+/************************ MEDIA ************************/
+
+@media screen and (max-width: 778px) {
+    .input-group{
+        flex-direction: column;
+    }
+
+    .input-group button {
+        width: 100%;
+        margin-top: 7px;
+    }
+
+    .modal {
+        width: 95%;
+    }
+
+    .modal .input-group input {
+        height: 60px;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .form-container {
+        width: 100%;
+        margin-bottom: 50px;
+    }
+
+    .form-container input {
+        font-size: 1.2rem;
+    }
+
+    /* ********************** */
+
+    .todo-container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .todo-container li {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .todo-container li p {
+        font-size: 3rem;
+        margin-bottom: 26px;
+    }
+
+    .button-group {
+        width: 100%;
+        justify-content: flex-start;
+        flex-direction: column;
+        margin-bottom: 8px;
+    }
+
+    .todo-container #deleteBtn,
+    .todo-container #editBtn {
+        width: 100%;
+        height: 40px;
+    }
+}
