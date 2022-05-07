@@ -32,10 +32,7 @@ $ git clone https://github.com/cnryzgn/MERN-Stack-Todo-App.git
 $ cd server
 $ npm install
 $ npm start
-  
-# go back to main directory
-$ cd ..
-  
+
 # install && run client-side
 $ cd client
 $ npm install
