@@ -27,12 +27,16 @@
   
 # clone the repository
 $ git clone https://github.com/cnryzgn/MERN-Stack-Todo-App.git
+
+# open the project folder
+$ cd MERN-Stack-Todo-App
   
 # install & run server-side
 $ cd server
 $ npm install
 $ npm start
 
+# open new terminal
 # install && run client-side
 $ cd client
 $ npm install
