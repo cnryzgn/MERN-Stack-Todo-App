@@ -36,7 +36,7 @@ $ cd server
 $ npm install
 $ npm start
 
-# open new terminal
+# open new terminal, go project folder and then follow the codes
 # install && run client-side
 $ cd client
 $ npm install
